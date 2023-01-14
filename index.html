@@ -4,65 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Здесь будет логотип сайта-->
-    <title>EasyBox</title>
+    <link rel="shortcut icon" href="img/ico.png" type="image/png">
+    <title>EasyBox — Главная</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/unslider.css">
+    <link rel="stylesheet" href="css/unslider-dots.css">
 </head>
 <body>
-    
 <header>
-            EasyBox 
-            <div class="knop1">
-                <a href=""><img src="1.png" alt=""></a>
-                <a href=""><img src="2.png" alt=""></a>
+            <div class="logo"><img src="img/logo3.png" alt=""></div>
+            <div class="knopHead">
+                <a href="#"><img src="1.png" alt=""></a>
+                <a href="#"><img src="2.png" alt=""></a>
             </div>
         
 </header>
-        <nav>
-            <a href="">Главная</a>
-            <a href="">Категории</a>
-            <a href="">Рулетка</a>
+        <nav class="sticky">
+            <a href="#">Главная</a>
+            <a href="#">Категории</a>
+            <a href="#">Рулетка</a>
         </nav>
 <main>
-<div class="slideshow-container" >
-      <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img src="img/Screenshot%20(47).png" style="width: 100%" alt="" >
-          <div class="text"></div>
-      </div>  
-       
-</div>
-
-<div class="slideshow-container" >
-      <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img src="img/Screenshot%20(52).png" style="width: 100%" alt="" >
-          <div class="text"></div>
-      </div>  
-       
-</div>
-
-<div class="slideshow-container" >
-      <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img src="img/Screenshot%20(48).png" style="width: 100%" alt="" >
-          <div class="text"></div>
-      </div>  
-    
-</div>
-<br>
-
-<div style="text-align: center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-
+    <div class="my-slider center-block-main">
+        <ul>
+            <li>
+                <img src="img/Screenshot%20(52).png" alt="">
+            </li>
+            <li>
+                <img src="img/Screenshot%20(47).png" alt="">
+            </li>
+            <li>
+                <img src="img/Screenshot%20(48).png" alt="">
+            </li>
+        </ul>
+    </div>
 </main>
-<footer>
 
+<footer>
+    <div class="footerbox">
+Всякая информация бла-бла-бла <br>
+Всякая информация бла-бла-бла <br>
+Всякая информация бла-бла-бла <br>
+Всякая информация бла-бла-бла
+    </div>
 </footer>
+<script src="js/unslider-min.js"></script>
 <script src="js.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/unslider-min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+                $('.my-slider').unslider({
+                    autoplay: true,
+                    arrows: false
+            });
+        });
+    </script>
 </body>
 </html>
