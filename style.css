@@ -2,11 +2,13 @@ main{
     width: 85%;
     margin:0 auto;
     background-color: rgba(128, 128, 128, 0.3);
-
 }
 body {
    margin: 0;
    background-image: url(img/фон.png);
+}
+a{
+    text-decoration: none;
 }
 header {
     background-image: repeating-radial-gradient(rgba(241, 184, 255, 0.7), rgba(68, 148, 252, 0.7));
@@ -27,13 +29,13 @@ nav {
     justify-content: space-around;
 }
 nav a {
-    text-decoration: none;
     color: white;
     font: 25px Arial;
     font-weight: bold;
     width: auto;
     padding: 11px;
     padding-top: 10px;
+    transition-duration: 1s;
 }
 img{
 
@@ -56,15 +58,10 @@ img{
 }
 footer{
     background-color: rgba(113, 113, 113, 0.7);
-    height: 180px;
-    display: flex;
     padding: 30px;
 }
 nav a:hover{
     background-color: rgba(127, 182, 255, 0.404);
-}
-.footerbox{
-margin: 0 auto;
 }
 .logo img{
     width: 700px;
@@ -83,7 +80,6 @@ margin: 0 auto;
     justify-content: center;
 }
 .cart {
-    border: 2px solid black;
     width: 400px;
     height: 400px;
     margin: 40px;
@@ -94,15 +90,47 @@ h1 {
     font-size:40px;
     margin-top: 0;
   }
-.futlogo {
-    display: flex;
-    flex-wrap: row;
-    justify-content: left;
-    align-items:center; 
-
-}
 .futlogo img{
-    width: 30px;
-    height: 30px;
-    margin: 10px;
+    width: 20px;
+    height: 20px;
+}
+figcaption{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.cop{
+    display: flex;
+    justify-content:center;
+    margin-top: 30px;
+}
+.cop p{
+    text-align: center;
+    width: 480px;
+}
+p{margin: 0;
+padding: 0;}
+.contact{
+    width: 360px;
+}
+.blockContact{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+h3{
+    text-align: left;
+    font-size: 30px;
+    padding: 0px;
+}
+.blockContact a{
+    color: black;
+    font-size: 22px;
+    padding: 0px;
+    line-height: 40px;
+}
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
