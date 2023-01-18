@@ -95,11 +95,14 @@ h1 {
     margin-top: 0;
   }
 .futlogo {
-    width: 100px;
-    height: 100px;
     display: flex;
     flex-wrap: row;
     justify-content: left;
     align-items:center; 
 
+}
+.futlogo img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
 }
