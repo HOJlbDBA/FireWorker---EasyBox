@@ -1,6 +1,8 @@
 main{
-    margin: 20px;
-    height: 1500px;
+    width: 85%;
+    margin:0 auto;
+    background-color: rgba(128, 128, 128, 0.3);
+
 }
 body {
    margin: 0;
@@ -27,11 +29,11 @@ nav {
 nav a {
     text-decoration: none;
     color: white;
-    font: 20px Arial;
+    font: 25px Arial;
     font-weight: bold;
     width: auto;
-    padding: 13px;
-    padding-top: 14px;
+    padding: 11px;
+    padding-top: 10px;
 }
 img{
 
@@ -44,16 +46,19 @@ img{
 }
 	
 .unslider-nav{
-		max-width: 1170px; margin: 0 auto;position: relative;top: -54px;
+		max-width: 1500px; margin: 0 auto;position: relative;top: -54px;
 }
 
 .center-block-main {
-        max-width: 1170px;margin:0 auto;
+        max-width: 1500px;
+        margin:0 auto;
+        margin-top: 60px;
 }
 footer{
     background-color: rgba(113, 113, 113, 0.7);
-    height: 100px;
+    height: 180px;
     display: flex;
+    padding: 30px;
 }
 nav a:hover{
     background-color: rgba(127, 182, 255, 0.404);
@@ -71,4 +76,30 @@ margin: 0 auto;
   position: sticky;
   top: 0;
   z-index: 1;
+}
+.blockCart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cart {
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    margin: 40px;
+}
+    
+h1 {
+    text-align:center;
+    font-size:40px;
+    margin-top: 0;
+  }
+.futlogo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-wrap: row;
+    justify-content: left;
+    align-items:center; 
+
 }
