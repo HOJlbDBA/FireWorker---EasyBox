@@ -1,3 +1,8 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 main{
     width: 85%;
     margin:0 auto;
@@ -13,21 +18,17 @@ a{
 }
 header {
     background-image: repeating-radial-gradient(rgba(241, 184, 255, 0.7), rgba(68, 148, 252, 0.7));
-    height: 150px;
+    width: 100%;
+    padding: 15px 0;
+    position: relative;
 }
-header .knopHead a img {
-    height: 30px;
-    margin-top: -20px;
-    margin-right: 15px;
-    float: right;
-}
-
 nav {
     background-color: rgba(176, 164, 247, 0.8);
     height: 50px;
     display: flex;
     align-items: center; 
     justify-content: space-around;
+    border-radius: 0 0 10% 10%;
 }
 nav a {
     color: rgb(255, 255, 255);
@@ -39,19 +40,20 @@ nav a {
     transition-duration: 1s;
 }
 img{
-
-	max-width:100%;
+	display: block;
+    max-width: 100%;
 }
-
 .my-slider ul li{
-		position: relative; color:#f45a40;
-        
+		position: relative;
+        color:#f45a40;
 }
-	
 .unslider-nav{
-		max-width: 1500px; margin: 0 auto;position: relative;top: -54px;
+		max-width: 1500px;
+        margin: 0 auto;
+        position: relative;
+        top: -50px;
+        border-radius: 0;
 }
-
 .center-block-main {
         max-width: 1500px;
         margin:0 auto;
@@ -59,7 +61,7 @@ img{
 }
 footer{
     background-color: rgba(176, 164, 247, 0.7);
-    padding: 30px;
+    padding: 30px 0;
 }
 nav a:hover{
     background-color: rgba(127, 182, 255, 0.404);
@@ -67,7 +69,8 @@ nav a:hover{
 .logo img{
     width: 700px;
     margin: 15px auto;
-}.logo{
+}
+.logo{
     display: flex;
 }
 .sticky{
@@ -85,6 +88,9 @@ nav a:hover{
     height: 400px;
     margin: 40px;
 }
+.cart img{
+    border-radius: 15%;
+}
     
 h1 {
     text-align:center;
@@ -98,7 +104,7 @@ h1 {
 figcaption{
     text-align: center;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: normal;
 }
 .cop{
     display: flex;
@@ -114,7 +120,7 @@ p{
     padding: 0;
 }
 .contact{
-    width: 360px;
+    margin:10px 50px;
 }
 .blockContact{
     display: flex;
@@ -138,3 +144,162 @@ ol, ul {
     margin: 0;
     padding: 0;
 }
+.cost{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.ruletka{
+    height: 500px;
+}
+.ruletkaBank{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ruletkaItem{
+    width: 200px;
+    height: 200px;
+    border:2px solid black;
+    margin: 10px;
+}
+h2{
+    text-align: center;
+}
+.korzinaBank{
+    display: flex;
+    flex-wrap: wrap;
+}
+.korzinaItem{
+    width: 100%;
+    display: flex;
+    margin: 20px;
+    background-color: rgba(176, 164, 247, 0.5);
+}
+.korzinaLogo{
+    height: 175px;
+    width: 250px;
+    background-image: url(img/gifts/accessoriesbox.jpg);
+    background-size: contain;
+}
+.korzinaInfo{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.korzinaFunc{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    padding: 5px;
+}
+input{
+    width: 100px;
+}
+form{
+    display: flex;
+    justify-content:center;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+.delete{
+    background-color: #f45a40;
+    border-radius: 15%;
+    color: white;
+    padding: 3px;
+    margin: 5px;
+    text-align: center;
+    transition-duration: 1s;
+    width: 100px;
+}
+.buy{
+    background-color: #97e241;
+    border-radius: 15%;
+    color: white;
+    padding: 3px;
+    margin: 5px;
+    text-align: center;
+    transition-duration: 1s;
+    width: 100px;
+}
+.delete:hover{
+    background-color: rgba(244, 91, 64, 0.5)
+}
+.buy:hover{
+    background-color: rgba(151, 226, 65, 0.5);
+}
+@media (max-width: 1130px) {
+    .blockContact{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0 130px;
+        padding-right: 80px;
+    }
+    .contact{
+        margin:10px 50px;
+        width: 400px;
+    }
+    nav a{
+        font-size: 22px;
+    }
+ }
+@media (max-width: 739px) {
+    .blockContact{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 70px;
+    }
+    .contact{
+        margin:10px auto;
+        width: 300px;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    .logo{
+        padding: 0 20px;
+    }
+ }
+ @media (max-width: 456px) {
+    nav a{
+        font-size: 15px;
+    }
+ }
+ @media (max-width: 566px) {
+    .cart {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+    }
+    figcaption{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .cost{
+        font-size: 20px;
+    }
+ }
+ @media (max-width: 400px) {
+    .cart {
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+    }
+    figcaption{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .cost{
+        font-size: 18px;
+    }
+ }
