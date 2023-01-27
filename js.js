@@ -1,23 +1,14 @@
-        jQuery(document).ready(function($) {
-                $('.my-slider').unslider({
-                    autoplay: true,
-                    arrows: false
-            })
-        });
-        function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn')) {
-            
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
+jQuery(document).ready(function($) {
+  $('main img').css('display','block')
+  $('.my-slider').unslider({
+      autoplay: true,
+       arrows: false
+})
+  $('.multiple-items').slick({
+    infinite: true,
+    dots:true,
+    autoplay:true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+});
+});

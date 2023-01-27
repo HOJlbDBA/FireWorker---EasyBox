@@ -19,18 +19,22 @@
         <a href="korzina.html">Корзина</a>
     </nav>
 <main>
-    <h1 style="padding-top:30px;">Корзина</h1>
-    <div class="korzinaBank">
-        <div class="korzinaItem">
+    <h1>Корзина</h1>
+   <div class="korzinaBank">
+       <div class="korzinaItem">
             <div class="korzinaLogo">
             </div>
             <div class="korzinaInfo">
+               <p>Изи бокс "Accessories" сборище различных ништяков, которые подходят как для него, так и для нее. </p> 
+               <p>Ремни, очки, головные уборы, цепочки, значки, футболки, кулоны и 100 различных вариантов того, что может ждать вас в боксе. Больше не нужно гадать, что подарить!</p> 
+
             </div>
             <div class="korzinaFunc">
                 <p style="text-align: center; font-size: small;">Кол-во</p> 
-                <form action="">
-                    <input type="number" name="" id="" min="1" max="100" step="1" value="1" required>
+                <form action="" id="formKol">
+                    <input type="number" name="kolichestvo" id="" min="1" max="100" step="1" value="1" required>
                 </form>
+                <div class="itogo">Итого:<span id="itogo"></span></div>
                 <div class="buy">Купить</div>
                 <div class="delete">Удалить</div>
             </div>
@@ -107,6 +111,7 @@
     </div> 
 
 </footer>
-
+<script src="jquery-3.6.3.min.js"></script>
+<script src="korzina.js"></script>
 </body>
 </html>
